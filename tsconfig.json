@@ -6,7 +6,9 @@
       "*": ["./*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
-      "@navigation/*": ["navigation/*"]
+      "@navigation/*": ["navigation/*"],
+      "@theme/*": ["theme/*"],
+      "@constants/*": ["constants/*"]
     }
   }
 }
