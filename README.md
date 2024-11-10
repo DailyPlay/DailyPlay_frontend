@@ -10,11 +10,8 @@
    ```
    ✨ `:sparkles:` - 새로운 기능 추가
    💄 `:lipstick:` - UI 스타일링 관련 작업
-   🌐 `:globe_with_meridians` - 국제화 및 현지화
    👽 `:alien:` - 외부 API 변경
    💬 `:speech_balloon:` - 텍스트/문자열 추가/변경
-   📱 `:iphone:` - 모바일 대응 작업
-   🔍 `:mag:` - SEO 관련 작업
    💫 `:dizzy:` - 애니메이션/전환 효과 추가/변경
    📖 `:book:` - storybook
    📦 `:package:` - 패키지 파일 추가/변경
