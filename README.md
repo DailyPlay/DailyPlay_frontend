@@ -1,79 +1,100 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+- [📌 Convention](#📌-convention)
+  - [커밋 컨벤션](#커밋-컨벤션)
+  - [네이밍 컨벤션](#네이밍-컨벤션)
 
-# Getting Started
+# 📌 Convention
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 커밋 컨벤션
 
-## Step 1: Start the Metro Server
+1. 커밋 메세지 제목은 `PROJECT_NAME` / `gitmoji` - `기능설명` 템플릿으로 작성해주세요.
+   ```
+   ✨ `:sparkles:` - 새로운 기능 추가
+   💄 `:lipstick:` - UI 스타일링 관련 작업
+   🌐 `:globe_with_meridians` - 국제화 및 현지화
+   👽 `:alien:` - 외부 API 변경
+   💬 `:speech_balloon:` - 텍스트/문자열 추가/변경
+   📱 `:iphone:` - 모바일 대응 작업
+   🔍 `:mag:` - SEO 관련 작업
+   💫 `:dizzy:` - 애니메이션/전환 효과 추가/변경
+   📖 `:book:` - storybook
+   📦 `:package:` - 패키지 파일 추가/변경
+   🚧 `:construction:` - 작업 진행 중
+   🎨 `:art:` - 코드 구조/형식 개선
+   ♻️  `:recycle:` - 코드 리팩토링
+   🐛 `:bug:` - 버그 수정
+   🗑️ `:wastebasket:` - 불필요한 코드/파일 삭제
+   ✏️  `:pencil2:` - 오타 수정
+   ⏪ `:rewind:` - 변경 사항 되돌리기
+   🚚 `:truck:` - 리소스 이동/이름 변경
+   🩹 `:adhesive_bandage:` - 코드 작성 시 실수, 자잘한 수정
+   🎉 `:tada:` - 프로젝트 시작
+   🔧 `:wrench:` - 설정 파일 변경
+   🚀 `:rocket:` - 배포 관련 작업
+   👷 `:construction_worker:` - CI 설정
+   💡 `:bulb:` - 주석 추가/변경
+   ✅ `:white_check_mark:` - 테스트 추가
+   📝 `:memo:` - 문서 추가/업데이트
+   ```
+   (<a href="https://gitmoji.dev">gitmoji</a> 참고)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## 네이밍 컨벤션
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **SVG**
 
-```bash
-# using npm
-npm start
+  ```
+  Icon + { 이름 }
 
-# OR using Yarn
-yarn start
-```
+  ex) IconPlus
+  ```
 
-## Step 2: Start your Application
+- **Image (png)**
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+  ```
+  Img + { 이름 }
 
-### For Android
+  ex) ImgLogo
+  ```
 
-```bash
-# using npm
-npm run android
+- **Query Hook**
 
-# OR using Yarn
-yarn android
-```
+  ```
+  조회: use + { Entity }s + Query
+  삭제: use + Delete + { Entity }s
+  수정: use + Edit + { Entity }
+  등록: use + Create + { Entity }s
+  *단수복수 구분
 
-### For iOS
+  ex) useCreateOrderStyles
+  ```
 
-```bash
-# using npm
-npm run ios
+- **Hook**
 
-# OR using Yarn
-yarn ios
-```
+  ```
+  use + { 기능 or UI Term }
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+  ex) useCheckbox, useSegment
+  ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- **Pages**
 
-## Step 3: Modifying your App
+  ```
+  파일/폴더명: { 페이지 이름 }
+  Page 파일내의 컴포넌트 함수 이름: { 페이지 이름 } + Page
 
-Now that you have successfully run the app, let's modify it.
+  ex)
+  // OrderStyle.tsx
+  const OrderStylePage = () => {...};
+  ```
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- **Components**
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+  ```
+  컴포넌트 이름: 모양 + { Entity } + 기능
+  ex) ModalOrderStyleCreate, BtnAdd
 
-## Congratulations! :tada:
+  컴포넌트 내의 함수:	기능 + 동작
+  ex) handleChange, handlePlusClick...
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+  props로 받아오는 함수:	on + *
+  ex) onChange={handleChange}, onPlusClick={handlePlusClick}...
+  ```
