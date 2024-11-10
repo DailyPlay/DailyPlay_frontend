@@ -36,6 +36,15 @@
 
 ## 네이밍 컨벤션
 
+-**Type**-
+  ```
+  type: T + {이름}
+  ex) TGetQueryProps
+
+  interface: I + {이름}
+  ex) IGetQueryProps
+  ```
+
 - **SVG**
 
   ```
