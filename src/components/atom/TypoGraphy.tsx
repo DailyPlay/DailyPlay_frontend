@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 
 interface ITypoGraphy {
   fontSize: number;
-  fontWeight: string | number;
+  fontWeight?: string | number;
   color: string;
   children: ReactNode;
   lineHeight?: number;
@@ -18,7 +18,7 @@ export const TypoGraphy = ({children, ...props}: ITypoGraphy) => {
 
 const _TypoGraphy = styled.Text<{
   fontSize: number;
-  fontWeight: string | number;
+  fontWeight?: string | number;
   color: string;
   lineHeight?: number;
 }>`
