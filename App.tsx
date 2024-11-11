@@ -6,8 +6,11 @@
  */
 
 import React from 'react';
-import RootNavigation from 'navigation';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+
+import RootNavigation from 'navigation';
+
+import './global.css';
 import {theme} from 'styles/color';
 import {ThemeProvider} from 'styled-components';
 
