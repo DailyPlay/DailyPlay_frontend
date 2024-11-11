@@ -19,7 +19,7 @@ export const TypoGraphy = ({children, ...props}: ITypoGraphy) => {
 const _TypoGraphy = styled.Text<{
   fontSize: number;
   fontWeight?: string | number;
-  color: string;
+  color?: string;
   lineHeight?: number;
 }>`
   font-size: ${({fontSize}) => fontSize || '10'}px;
