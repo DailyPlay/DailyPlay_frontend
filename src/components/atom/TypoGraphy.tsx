@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 interface ITypoGraphy {
   fontSize: number;
   fontWeight?: string | number;
-  color: string;
+  color?: string;
   children: ReactNode;
   lineHeight?: number;
 }
