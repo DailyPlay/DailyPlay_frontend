@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import Template from 'components/template/Template';
+import LoginStack from './LogInStack';
 import {stackNavigationName} from 'constants/navigation';
 
 const Stack = createStackNavigator();
@@ -17,7 +17,7 @@ const RootNavigation = () => {
           screenOptions={{headerShown: false}}>
           <Stack.Screen
             name={stackNavigationName.logInStack}
-            component={Template}
+            component={LoginStack}
           />
         </Stack.Navigator>
       </NavigationContainer>
