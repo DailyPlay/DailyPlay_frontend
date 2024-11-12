@@ -10,7 +10,7 @@ const LoginSymbol = {
 };
 
 const createIcon: React.FC = (props: IconProps, Svg: React.FC<SvgProps>) => {
-  return <Svg />;
+  return <Svg {...props} />;
 };
 
 export default LoginSymbol;
