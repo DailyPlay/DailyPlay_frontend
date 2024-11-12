@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-import {theme as color} from 'styles/color';
+import {color} from 'styles/color';
 import {ButtonLarge} from 'components/atom/TypoGraphy';
 
 import {IButtonProps} from 'components/molecule/Button';
@@ -25,7 +25,7 @@ export const ButtonContainer = styled.TouchableOpacity<{disabled?: boolean}>`
   border-radius: 10px;
   padding: 19px 0;
   background-color: ${({theme, disabled}) =>
-    disabled ? theme.color.neutral200 : theme.color.blue900};
+    disabled ? theme.neutral200 : theme.blue900};
   justify-content: center;
   align-items: center;
 `;

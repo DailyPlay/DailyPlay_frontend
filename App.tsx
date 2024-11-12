@@ -11,7 +11,7 @@ import './global.css';
 
 import RootNavigation from 'navigation';
 
-import {theme} from 'styles/color';
+import {color} from 'styles/color';
 import {ThemeProvider} from 'styled-components';
 
 function App(): React.JSX.Element {
@@ -23,7 +23,7 @@ function App(): React.JSX.Element {
   });
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={color}>
         <RootNavigation />
       </ThemeProvider>
     </QueryClientProvider>

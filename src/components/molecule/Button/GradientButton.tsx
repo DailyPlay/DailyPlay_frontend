@@ -3,7 +3,7 @@ import {TouchableOpacity} from 'react-native';
 import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import {theme} from 'styles/color';
+import {color} from 'styles/color';
 import {ButtonLarge} from 'components/atom/TypoGraphy';
 
 import {IButtonProps} from 'components/molecule/Button';
@@ -21,10 +21,10 @@ const Gradient = (props: IButtonProps) => {
         end={{x: 1, y: 0}}
         colors={
           disabled
-            ? [theme.neutral500, theme.neutral500]
-            : [theme.blue500, theme.black]
+            ? [color.neutral500, color.neutral500]
+            : [color.blue500, color.black]
         }>
-        <ButtonLarge color={theme.white}>{label}</ButtonLarge>
+        <ButtonLarge color={color.white}>{label}</ButtonLarge>
       </GradientBox>
     </TouchableOpacity>
   );

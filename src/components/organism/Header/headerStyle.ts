@@ -7,7 +7,7 @@ export const HeaderContainer = styled.View<{padding?: string; left?: boolean}>`
   padding: ${({padding}) => (padding ? padding : '11px 0px')};
   position: relative;
   flex-direction: row;
-  background-color: ${({theme}) => theme.color.white};
+  background-color: ${({theme}) => theme.white};
 `;
 
 export const BackButtonBox = styled.TouchableOpacity`

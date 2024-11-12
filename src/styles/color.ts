@@ -38,7 +38,7 @@ const neutral = {
   neutral50: '#f2f4f7',
 } as const;
 
-export const theme = {
+export const color = {
   ...blue,
   ...gray,
   ...neutral,

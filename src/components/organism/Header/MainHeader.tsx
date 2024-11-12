@@ -2,7 +2,7 @@ import React from 'react';
 import * as s from './headerStyle';
 import DefaultIcons from '@assets/icons/default';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {theme} from 'styles/color';
+import {color} from 'styles/color';
 
 const MainHeader = (props?: {left?: boolean}) => {
   const insets = useSafeAreaInsets();
@@ -19,7 +19,7 @@ const MainHeader = (props?: {left?: boolean}) => {
     <s.GradientHeader
       start={{x: 0, y: 0}}
       end={{x: 0, y: 1}}
-      colors={[theme.white, theme.blue100]}
+      colors={[color.white, color.blue100]}
       insets={insets}>
       <s.HeaderWrapper>
         <s.HeaderLogo
