@@ -14,9 +14,9 @@ const LoginStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName={loginStackMenu.introduction.name}>
+      initialRouteName={loginStackMenu.introduction}>
       <Stack.Screen
-        name={loginStackMenu.introduction.name}
+        name={loginStackMenu.introduction}
         component={Introduction}
       />
     </Stack.Navigator>

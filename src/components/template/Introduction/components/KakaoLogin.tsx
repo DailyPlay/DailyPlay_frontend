@@ -17,7 +17,7 @@ const KakaoLoginButton = () => {
       const res = await login();
       if (res) {
         const kakaoProfile = await me();
-        navigation.navigate(loginStackMenu.termsOfUse.name);
+        navigation.navigate(loginStackMenu.termsOfUse);
       }
     } catch (e: any) {
       if (e && typeof e === 'object') {

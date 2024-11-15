@@ -5,9 +5,9 @@ export const stackNavigationName = {
 } as const;
 
 export const loginStackMenu = {
-  introduction: {headerTitle: '', name: 'introduction'},
-  termsOfUse: {headerTitle: '', name: 'termsOfUse'},
-  termsOfUseDetail: {headerTitle: '', name: 'termsOfUseDetail'},
-  preference: {headerTitle: '', name: 'preference'},
-  setNotiTime: {headerTitle: '', name: 'setNotiTime'},
+  introduction: 'introduction',
+  termsOfUse: 'termsOfUse',
+  termsOfUseDetail: 'termsOfUseDetail',
+  preference: 'preference',
+  setNotiTime: 'setNotiTime',
 } as const;

@@ -48,7 +48,7 @@ const Introduction = () => {
         <KakaoLoginButton />
       </s.IconWrapper>
       <s.GuestTextBox
-        onPress={() => navigation.navigate(loginStackMenu.setNotiTime.name)}>
+        onPress={() => navigation.navigate(loginStackMenu.setNotiTime)}>
         <TitleSmall color="#667580">또는 게스트로 시작하기</TitleSmall>
       </s.GuestTextBox>
     </s.Container>
